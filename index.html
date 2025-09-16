@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rotinas</title>
+  <meta name="description" content="App de rotinas com visual inspirado no Asana, feito com HTML, CSS e JS separados." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="java.js"></script>
+</head>
+<body>
+  <div class="app" data-layout="with-sidebar" data-theme="light">
+    <!-- Barra superior -->
+    <header class="topbar" role="banner">
+      <button class="btn icon only" aria-label="Alternar menu" id="btnToggleSidebar" title="Abrir/fechar menu">
+        <span class="icon" aria-hidden="true">☰</span>
+      </button>
+      <a href="#" class="brand" aria-label="Página inicial">
+        <span class="brand-mark" aria-hidden="true">✔</span>
+        <span class="brand-name">Life build</span>
+      </a>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" role="navigation" aria-label="Menu de navegação">
+      <h1>Meu perfil</h1>
+      <img src="img/Ryo.jpg" alt="Foto do perfil" class="profile-photo" />
+      <div class="profile-name">Usuário</div>
+      <h1 class="config-title">Configuração</h1>
+      <p class="config-desc">Esta página é um protótipo de configuração para o aplicativo de rotinas.</p>
+      <div class="config-option">
+        <label>Ativar notificações do navegador
+          <span style="float:right;">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </span>
+        </label>
+      </div>
+      <div class="config-option">
+        <label>Trocar modo
+          <span style="float:right;">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </span>
+        </label>
+      </div>
+      <div class="config-option">
+        <label>Ativar animações
+          <span style="float:right;">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </span>
+        </label>
+      </div>
+      <div class="config-option">
+        <label>Salvar automaticamente
+          <span style="float:right;">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </span>
+        </label>
+      </div>
+      <div class="config-option">
+        <label>Modo de depuração
+          <span style="float:right;">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </span>
+        </label>
+      </div>
+      <div class="config-option">
+        <label for="appLanguage">Idioma do aplicativo
+          <span style="float:right;">
+            <select id="appLanguage">
+              <option value="pt-BR">Português</option>
+              <option value="en-US">Inglês</option>
+              <option value="es-ES">Espanhol</option>
+            </select>
+          </span>
+        </label>
+      </div>
+      <div class="config-option">
+        <label for="themeColor">Tema de cor
+          <span style="float:right;">
+            <select id="themeColor">
+              <option value="light">Claro</option>
+              <option value="dark">Escuro</option>
+              <option value="blue">Azul</option>
+            </select>
+          </span>
+        </label>
+      </div>
+      <div class="config-option">
+        <label for="fontFamily">Fonte personalizada
+          <span style="float:right;">
+            <select id="fontFamily">
+              <option value="Inter">Inter</option>
+              <option value="Arial">Arial</option>
+              <option value="Roboto">Roboto</option>
+            </select>
+          </span>
+        </label>
+      </div>
+      <div class="config-option">
+        <label for="fontSize">Tamanho da fonte
+          <span style="float:right;">
+            <input type="range" id="fontSize" min="12" max="24" value="16" />
+          </span>
+        </label>
+      </div>
+      <div class="config-option">
+        <label>Mostrar dicas
+          <span style="float:right;">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </span>
+        </label>
+      </div>
+      <div class="config-option">
+        <label>Sincronizar com nuvem
+          <span style="float:right;">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </span>
+        </label>
+      </div>
+      <div class="config-option">
+        <label>Limpar dados do app
+          <span style="float:right;">
+            <button class="btn danger" style="font-size:0.8em;">Limpar</button>
+          </span>
+        </label>
+      </div>
+      <div class="form-actions">
+        <button class="btn primary">Salvar Configurações</button>
+        <button class="btn secondary">Restaurar Padrões</button>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>
